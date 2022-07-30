@@ -7,7 +7,7 @@ const Signin = () => {
     const navigate = useNavigate();
 
     const goToNewApp =async () => {
-        if(user?. email) {
+        if(user?.email) {
             navigate("/newapp")
         }
     }

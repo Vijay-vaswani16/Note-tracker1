@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Signin from "./Signin";
 import NewApp from "./NewApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext";
-import Protected from "./protected";
+
 function App() {
     // const [notes, setNotes] = useState([]);
-    const [isUserSignedIn, setIsUserSignedIn] = useState(false);
+    // const [isUserSignedIn, setIsUserSignedIn] = useState(false);
+
+   
     return (
         <AuthContextProvider>
             <Router basename="/">
